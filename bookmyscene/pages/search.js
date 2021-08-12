@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import { useRouter } from "next/dist/client/router";
 import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
-// import Map from "../components/Map";
+import Map from "../components/Map";
 import { ChevronDownIcon, RefreshIcon, StarIcon } from "@heroicons/react/solid";
 import { StarIcon as StarIconOutline } from "@heroicons/react/outline";
 import { useState } from "react";
@@ -121,13 +121,13 @@ function Search({ searchResults }) {
   };
 
   return (
-    <div>
+    <div className="bg-regal-blue-dark">
       <Header
         placeholder={`${location} | ${range} | ${numOfGuests}`}
         collapsed
       />
 
-      <main className="flex-col  justify-center md:max-w-5xl bg-regal-blue text-white xl:max-w-full">
+      <main className="flex  justify-center md:max-w-5xl bg-regal-blue text-white xl:max-w-full">
         <section className="pt-14 px-6 ">
           <p className="text-sm">
             300+ Stays: <span className="bg-regal-blue-dark">{range}</span> for{" "}
@@ -212,13 +212,13 @@ function Search({ searchResults }) {
           </div>
         </section>
 
-        {/* <section className="hidden h-screen xl:inline-flex xl:min-w-[600px]">
+        <section className="hidden h-screen xl:inline-flex xl:min-w-[600px]">
           <Map
             rating={starRating}
             searchResults={searchResults}
             viewLocation={viewLocation}
           />
-        </section> */}
+        </section>
       </main>
 
       <Footer />
