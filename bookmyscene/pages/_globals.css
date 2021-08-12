@@ -45,6 +45,6 @@
 
   /* SEARCH PAGE */
   .filterItem {
-    @apply text-xs hover:opacity-80 hover:bg-gray-200 cursor-pointer px-3 py-2;
+    @apply text-xs hover:opacity-80 hover:bg-regal-blue-dark cursor-pointer px-3 py-2;
   }
 }

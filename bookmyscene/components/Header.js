@@ -106,7 +106,7 @@ function Header({ placeholder, collapsed }) {
         collapsed ? "sticky" : "fixed"
       } w-full top-0 z-50 grid grid-cols-6 bg-transparent p-5 md:px-10 ${
         fillHeader
-          ? "bg-white transition ease-in-out duration-500 shadow-md"
+          ? "bg-regal-blue transition ease-in-out duration-500 shadow-md"
           : "transition duration-500"
       }`}
     >
@@ -120,7 +120,7 @@ function Header({ placeholder, collapsed }) {
       {/* Mid Section */}
       {/* Small input */}
       <div
-        className={`flex flex-grow z-50 items-center border-2 rounded-full bg-gray-100 md:hidden col-start-1 col-end-7 focus-within:shadow-sm `}
+        className={`flex flex-grow z-50 items-center border-2 rounded-full bg-regal-blue md:hidden col-start-1 col-end-7 focus-within:shadow-sm `}
       >
         <input
           value={searchInput}
@@ -136,7 +136,7 @@ function Header({ placeholder, collapsed }) {
       <div
         className={`${
           fillHeader ? "flex md:flex" : "hidden"
-        } hidden z-40 items-center border-2 rounded-full py-2 bg-gray-100 md:shadow-sm col-start-3 col-end-5 focus-within:shadow-sm `}
+        } hidden z-40 items-center border-2 rounded-full py-2 bg-regal-blue  md:shadow-sm col-start-3 col-end-5 focus-within:shadow-sm `}
       >
         <input
           id="mainInput"
@@ -210,7 +210,7 @@ function Header({ placeholder, collapsed }) {
         />
 
         <div
-          className={`flex items-center space-x-2 border p-2 rounded-full bg-gray-100 ${
+          className={`flex items-center space-x-2 border p-2 rounded-full bg-regal-blue-dark ${
             fillHeader ? "border-gray-300" : "border-transparent"
           }`}
         >
