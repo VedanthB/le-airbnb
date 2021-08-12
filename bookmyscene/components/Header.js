@@ -106,7 +106,7 @@ function Header({ placeholder, collapsed }) {
         collapsed ? "sticky" : "fixed"
       } w-full top-0 z-50 grid grid-cols-6 bg-transparent p-5 md:px-10 ${
         fillHeader
-          ? "bg-white transition ease-in-out duration-500 shadow-md"
+          ? "bg-regal-blue transition ease-in-out duration-500 shadow-md"
           : "transition duration-500"
       }`}
     >
